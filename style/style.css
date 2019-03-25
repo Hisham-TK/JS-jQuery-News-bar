@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #818181;
+}
+
+table {
+    /*font-size: xx-large;*/
+    background-color: #818181;
+    margin: 0 auto;
+    padding: .5em;
+    box-shadow: 2px 2px 11px 2px black;
+    border-radius: .5em;
+}
+
+#newsSlider {
+    margin: 1em 0;
+    background-color: #bfa7a7;
+    height: 3em;
+    box-shadow: 0 0 10px 1px black;
+}
+
+#addButton {
+    font-size: xx-large;
+    color: white;
+    background-color: #676767;
+    padding: 0.1em 0.3em;
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px 1px black;
+    border-radius: .2em;
+}
+
+#content, #filter {
+    color: #aae;
+    padding: 0.1em 0.5em;
+    font-size: xx-large;
+    border-radius: .2em;
+}
+
+#nTypes {
+    text-align: center;
+    padding: 0.2em;
+}
+
+/*Belong to w3school styles just to enhance user interface*/
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: x-large;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkMark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkMark {
+    background-color: #eee;
+}
+
+.checkMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkMark:after {
+    display: block;
+}
+
+.container .checkMark:after {
+    top: 6px;
+    left: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #818181;
+}
+/* End of copying */
+
+#t2 {
+    margin-top: 2em;
+}
+
+.container {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-family: monospace;
+    font-size: x-large;
+    margin-left: 2em;
+}
+
+#filter {
+    width: 93%;
+}
+
+hr {
+    margin: .4em 0;
+}
+
+#t2 input.news {
+    color: white;
+    font-size: x-large;
+    width: 100%;
+    border: none;
+    text-shadow: 1px 1px 4px black;
+    outline: none;
+    border-radius: .3em;
+    width: -webkit-fill-available;
+    text-align: center;
+}
+
+#t2 input[type=text].news {
+    text-align: left;
+    background-color: #444;
+}
+
+.delete, .edit, .save {
+    width: 100%;
+    color: white;
+    font-size: x-large;
+    font-family: serif;
+    background-color: #676767;
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+#t2 input, #t2 td {
+    padding: .1em .2em;
+}
+
+td {
+    padding: 0.3em;
+}
+
+th {
+    color: white;
+    font-size: x-large;
+    background-color: #818181;
+    text-shadow: 2px 2px 10px black;
+    border: #0005 1px dotted;
+}
+
+input.Sport {
+    background-color: #f4ff9c;
+}
+
+input.Social {
+    background-color: #d67ca2;
+}
+
+input.Political {
+    background-color: #d86060;
+}
+
+marquee {
+    color: #818181;
+    font-size: xx-large;
+    margin-top: .1em;
+    text-shadow: 1px 1px 6px white;
+    font-family: fantasy;
+    text-transform: capitalize;
+}
